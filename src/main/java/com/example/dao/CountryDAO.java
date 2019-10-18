@@ -59,4 +59,8 @@ public class CountryDAO {
 
         return country;
     }
+
+    public void deleteCountry(String countryId) {
+        countryMap.remove(countryId);
+    }
 }

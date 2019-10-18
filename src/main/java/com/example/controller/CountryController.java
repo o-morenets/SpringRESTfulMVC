@@ -40,4 +40,9 @@ public class CountryController {
     public Country addCountry(@RequestBody Country country) {
         return countryDAO.createCountry(country);
     }
+
+    @DeleteMapping("/countries/{countryId}")
+    public void deleteCountry(@PathVariable String countryId) {
+        countryDAO.deleteCountry(countryId);
+    }
 }
