@@ -35,7 +35,7 @@ public class CountryDAO {
         countryMap.put("DE", de);
     }
 
-    public Country getCountry(String id) {
+    public Country findCountry(String id) {
         return countryMap.get(id);
     }
 
@@ -52,5 +52,11 @@ public class CountryDAO {
                 .filter(city -> city.getId().equals(cityId))
                 .findFirst()
                 .orElseThrow(RuntimeException::new);
+    }
+
+    public Country createCountry(Country country) {
+        countryMap.put(country.getId(), country);
+
+        return country;
     }
 }
