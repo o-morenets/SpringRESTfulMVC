@@ -20,7 +20,7 @@ public class CountryDAO {
         City uaCity2 = new City(101L, "Lviv");
         City uaCity3 = new City(102L, "Odesa");
         City uaCity4 = new City(103L, "Kharkiv");
-        City uaCity5 = new City(104L, "Ternolil");
+        City uaCity5 = new City(104L, "Ternopil");
         List<City> uaCities = Arrays.asList(uaCity1, uaCity2, uaCity3, uaCity4, uaCity5);
         Country ua = new Country("UA", "Ukraine", uaCities);
 
